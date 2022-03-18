@@ -554,7 +554,7 @@ footer {
 }
 
 
-@media (min-width:1920px){
+@media (min-width:1920px) and (min-height: 1080px){
   .icon-width2{
     width: 60px;
     margin: 0;
