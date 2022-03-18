@@ -1,0 +1,1171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5 {
+  display: none;
+}
+
+.wrapper {
+  display: block;
+}
+
+@font-face {
+  font-family: "Inkfree";
+  src: url(./Font/ink-free.otf);
+}
+
+body {
+  font-family: "Inkfree";
+  background: url(./Assets/Background-cache-menu.png);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
+.showcase-area,.wrapper3,.wrapper2,.wrapper4,.wrapper5 {
+  background: url(./Assets/Background-cache-menu.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  z-index: 11;
+  height: 660px;
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  padding-top: 1em;
+}
+
+.height{
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wrapper3,.wrapper2,.wrapper4,.wrapper5{
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 721px;
+  height: 100%;
+  inset: 0;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  display: flex;
+  /* align-items: baseline; */
+  justify-content: center;
+  background-color: rgba(198, 228, 202, 0.7);
+  width: 86%;
+  margin: 0em auto;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 20px;
+  /* padding: 0.4em 0; */
+}
+
+.icon-div {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 25px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.icon-div:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.icon-description {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.icon-width {
+  width: 45px;
+}
+
+.icon-width2 {
+  width: 35px;
+  margin: 0.3em 0;
+}
+
+.icon-width3 {
+  margin: 0.1em 0;
+}
+
+.heading-div {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.front-page-heading {
+  width: 1000px;
+}
+
+.heading-description {
+  font-family: "Inkfree";
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.7em;
+  margin-top: 0.5em;
+}
+
+.plants-div {
+  text-align: center;
+  margin: 1.5em 0;
+  position: relative;
+}
+
+.cta-box-div {
+  display: flex;
+  justify-content: center;
+}
+
+.plants-div-img {
+  width: 240px;
+}
+
+.plants-div-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  width: 310px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  position: absolute;
+  font-weight: 600;
+  top: 105px;
+  right: 0;
+  left: 0;
+  border: 1px solid #fff;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  border-radius: 25px;
+  text-decoration: underline;
+  background-color: #ffb78f;
+  z-index: 11111;
+  padding: 0.5em 2em;
+  color: #000;
+}
+
+.side-nav-bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(198, 228, 202, 0.7);
+  backdrop-filter: blur(7px);
+  align-items: center;
+  top: 15px;
+  height: 595px;
+  z-index: 1;
+  padding: 1.5em 0.7em;
+  border-radius: 20px;
+  left: 20px;
+}
+
+.side-nav-bar-mobile {
+  display: none;
+}
+
+.side-nav-bar a {
+  display: block;
+  z-index: 11111111111111;
+  position: relative;
+  margin-bottom: 1.6em;
+}
+
+.side-nav-bar a:last-child {
+  margin-bottom: 0em;
+}
+
+.hamburger {
+  width: 37px;
+}
+
+.second-section {
+  margin-top: 4em;
+}
+
+.content-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0em 10em 1em 10em;
+}
+
+.second-content-div,
+.third-content-div,
+.fourth-content-div {
+  padding: 0em 10em 1em 10em;
+}
+
+.meet-the-gardener-div {
+  background-color: rgba(198, 228, 202, 0.85);
+  width: 48%;
+  /* border: 1px solid #fff; */
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+}
+
+.gardener-heading {
+  font-family: "Inkfree";
+  text-decoration: underline;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.gardener-description {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  margin: 1em 0;
+}
+
+.monstera-div{
+  width: 70%;
+  line-height: 1.3;
+  margin: 0 auto;
+}
+
+.gardener-btn {
+  background-color: #ffb78f;
+  color: #000;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-size: 1rem;
+  padding: 0.5em 1.2em;
+  border-radius: 20px;
+}
+
+.nft-img {
+  width: 430px;
+}
+
+.second-nft-img {
+  position: relative;
+  top: -3em;
+}
+
+.roadmap-div {
+  position: relative;
+  top: 3em;
+}
+
+.third-nft-img {
+  position: relative;
+  top: 3em;
+}
+
+.fourth-nft-img {
+  position: relative;
+  top: -3em;
+}
+
+.secretgarden-div {
+  position: relative;
+  top: 3em;
+}
+
+footer {
+  margin-top: 1em;
+  background: url(./Assets/Art_work.png) no-repeat;
+  width: 79%;
+  margin: 0 auto 5em;
+  /* height: 460px; */
+  background-size: 100% 100%;
+  background-position: top;
+  padding: 2em;
+}
+
+.as-seen-div {
+  background-color: rgba(198, 228, 202, 0.9);
+  text-align: center;
+}
+
+.nft-div {
+  background-color: rgba(198, 228, 202, 0.9);
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-calender {
+  width: 220px;
+}
+
+.as-seen-text {
+  font-family: "Inkfree";
+  padding-top: 0.5em;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+/* 
+.name-email-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-fields,
+.leave-a-message {
+  background-color: rgba(198, 228, 202, 0.9);
+  border: none;
+  padding: 0.6em 1em;
+  width: 40%;
+  font-size: 1.3rem;
+  border: 1px solid #000;
+  margin-bottom: 2em;
+  font-family: "Poppins";
+  color: #000;
+}
+
+.leave-a-message {
+  width: 100%;
+  height: 290px;
+  resize: none;
+  padding: 1.2em 1em;
+}
+
+.input-fields::placeholder,
+.leave-a-message::placeholder {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #000;
+  text-decoration: underline;
+}
+
+.leave-a-message::placeholder {
+  text-decoration: none;
+} */
+
+/* Collection Div */
+
+.wrapper3 {
+  padding-bottom: 1em;
+}
+
+.secret-garden-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 6em 1em 8em;
+  line-height: 1.2;
+}
+
+.grey,
+.orange,
+.blue,
+.purple {
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.grey {
+  color: #808080;
+}
+
+.blue {
+  color: #587fff;
+}
+
+.purple {
+  color: #e245ff;
+}
+
+.orange {
+  color: #ffc831;
+}
+
+.species-div-img {
+  width: 30%;
+  margin-left: 5em;
+}
+
+.collection-div {
+  margin: 7em 0 0 19em;
+  width: 50%;
+}
+
+.basic-design-div {
+  margin: 4em auto;
+  width: 70%;
+}
+
+/* Gardener Div */
+
+.wrapper2 {
+  padding-bottom: 5em;
+}
+
+.first-gardener-div {
+  margin: 4em 0 0 20em;
+}
+
+.trigger-div {
+  margin: 3em 0 0 26em;
+  width: 58%;
+}
+
+.begin-and-ambition-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 5em 2em 0;
+}
+
+.begin-div {
+  width: 50%;
+  margin-left: 10em;
+}
+
+.ambition-div {
+  width: 30%;
+  position: relative;
+  top: 40px;
+}
+
+.concept-div {
+  width: 60%;
+  margin-left: 13em;
+  margin-top: 3em;
+}
+
+.enter-secret-garden-div {
+  width: 55%;
+  margin-top: 4em;
+  margin-left: 32em;
+}
+
+/* Roadmap Div */
+
+.wrapper4 {
+  text-align: center;
+}
+
+.roadmap-img {
+  width: 85%;
+  margin: 2em auto 0; 
+  object-fit: cover;
+}
+
+/* Harvesting Div */
+
+.wrapper5 {
+  padding-bottom: 1em;
+}
+
+.harvesting-div,
+.goal-div {
+  width: 70%;
+  margin: 3em auto;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.goal-div {
+  margin-top: -1em;
+}
+
+.bold-weight {
+  font-weight: 600;
+}
+
+.holder-distributed-div {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.holder-div,
+.active-member-community-div {
+  width: 35%;
+  text-align: left;
+}
+
+.holder-div {
+  position: relative;
+  line-height: 1.2;
+  top: 30px;
+  right: 40px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.active-div,
+.community-div {
+  width: 100%;
+  text-align: left;
+}
+
+.stage-div {
+  width: 70%;
+  margin: 3em auto;
+  padding: 1em 1.5em;
+}
+
+@media (min-width:1920px){
+  .icon-width2{
+    width: 60px;
+    margin: 0;
+  }
+
+  .icon-width{
+    width: 65px;
+  }
+
+  .icon-description{
+    font-size: 1.5rem;
+  }
+
+  .front-page-heading {
+    width: 1350px;
+}
+
+.heading-description{
+  font-size: 3.6rem;
+}
+
+.plants-div-img {
+  width: 320px;
+}
+
+.overlay{
+  width: 960px;
+}
+
+.plants-div-text{
+  top: 126px;
+  font-size: 1.6rem;
+  width: 440px;
+}
+
+.heading-div{
+  margin-top: 5em;
+}
+
+.heading-description{
+  margin: 1em 0;
+}
+
+.showcase-area{
+  height: 100vh;
+}
+.side-nav-bar{
+  height: auto;
+}
+
+.side-nav-bar a{
+  margin-bottom: 2.6em;
+}
+
+.second-content-div, .third-content-div, .fourth-content-div, .content-div{
+  padding: 0em 14em 1em 14em;
+}
+
+.wrapper .meet-the-gardener-div{
+  width: 57%;
+}
+
+.nft-img{
+  width: 550px;
+}
+
+.gardener-heading{
+  font-size: 3.2rem;
+}
+
+.gardener-description{
+  font-size: 1.8rem;
+}
+
+.gardener-btn{
+  font-size: 1.5rem;
+}
+
+.nft-calender {
+  width: 280px;
+}
+
+.grey ,.blue,.orange,.purple{
+  font-size: 1.8rem;
+}
+
+.collection-div{
+  margin: 7em auto 0 auto;
+}
+
+.begin-and-ambition-div{
+  padding: 2em 10em 2em 4em;
+}
+
+.concept-div{
+  margin-left: 14em;
+  width: 63%;
+}
+.enter-secret-garden-div{
+  width: 60%;
+  margin-left: 40em;
+}
+
+
+.holder-div{
+  right: 60px;
+}
+}
+
+
+
+@media (min-width: 1500px) {
+  .showcase-area {
+    background: none;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  .second-section {
+    max-width: 1366px;
+    margin: 4em auto 0;
+  }
+
+  .name-email-div {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .leave-a-message {
+    max-width: 1366px;
+    margin: 0 auto 2em;
+  }
+}
+
+@media (max-width: 1320px) {
+  .icon-description {
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 90%;
+  }
+
+  .icon-div {
+    padding: 5px 15px;
+  }
+
+  .content-div {
+    padding: 0em 5em 3em 5em;
+  }
+
+  footer {
+    width: 85%;
+  }
+
+  .nft-img {
+    width: 380px;
+  }
+
+  .second-nft-img,
+  .third-nft-img,
+  .secretgarden-div,
+  .fourth-nft-img {
+    position: static;
+  }
+
+  .roadmap-div {
+    position: static;
+    margin-top: 0;
+  }
+
+  .wrapper .meet-the-gardener-div {
+    margin-top: 0;
+  }
+
+  .secret-garden-div {
+    margin: 1em 3em 1em 3em;
+  }
+
+  .first-gardener-div {
+    width: 60%;
+    margin: 3em auto;
+  }
+
+  .trigger-div {
+    width: 60%;
+    margin: 3em auto 0px auto;
+  }
+
+  .enter-secret-garden-div {
+    margin: 4em auto 0;
+    width: 60%;
+  }
+
+  .concept-div {
+    margin: 3em auto 0;
+  }
+
+  .holder-distributed-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .holder-div,
+  .active-member-community-div {
+    text-align: center;
+    position: static;
+  }
+
+  .active-div,
+  .community-div {
+    text-align: center;
+  }
+
+  .harvesting-div,
+  .goal-div,
+  .holder-div,
+  .active-member-community-div,
+  .stage-div {
+    width: 80%;
+  }
+
+  .side-nav-bar {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  
+  .side-nav-bar-mobile a {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .side-nav-bar-mobile .icon-width {
+    margin-right: 15px;
+  }
+
+  .side-nav-bar-mobile {
+    display: flex !important;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.5em 1em;
+    z-index: 111111111;
+    left: -1600px;
+    top: 0;
+    justify-content: center;
+    height: -webkit-fill-available;
+    width: 100%;
+    transition: 0.6s ease-in-out all;
+  }
+
+  .left {
+    left: 0;
+    transition: 0.6s ease-in-out all;
+  }
+
+  #close{
+    position: absolute;
+    font-family: 'Inkfree';
+    font-size: 2.5rem;
+    font-weight: 600;
+    right: 30px;
+    cursor: pointer;
+    top: 15px;
+  }
+
+  .twitter,
+  .open-sea,
+  .discord {
+    display: none;
+  }
+
+  .wrapper .gardener-btn {
+    font-size: 0.8rem;
+  }
+
+  .heading-description {
+    font-size: 2.5rem;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .front-page-heading {
+    width: 800px;
+  }
+
+  .nft-calender {
+    width: 140px;
+  }
+
+  .nft-img {
+    width: 300px;
+  }
+
+  .secret-garden-div {
+    flex-direction: column;
+  }
+
+  .species-div-img {
+    margin-left: 0;
+    width: 361px;
+    margin-top: 3em;
+  }
+
+  .collection-div {
+    margin: 4em auto;
+    width: 70%;
+  }
+
+  .species-div {
+    width: 76%;
+  }
+
+  .first-gardener-div,
+  .enter-secret-garden-div,
+  .trigger-div,
+  .concept-div {
+    width: 80%;
+    margin: 3em auto;
+  }
+
+  .begin-and-ambition-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .begin-div {
+    margin: 0;
+    width: 80%;
+  }
+
+  .ambition-div {
+    width: 80%;
+    margin: 3em 0 0 0;
+    position: static;
+  }
+}
+
+@media (max-width: 800px) {
+  .icon-description {
+    font-size: 0.8rem;
+  }
+
+  .icon-width {
+    width: 40px;
+  }
+
+  .icon-width2 {
+    width: 30px !important;
+  }
+
+  .content-div,
+  .second-content-div,
+  .third-content-div,
+  .fourth-content-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nft-img {
+    margin: 3em 0;
+  }
+
+  .plants-div-img {
+    width: 190px;
+  }
+
+  .overlay {
+    width: 570px;
+  }
+
+  .plants-div-text {
+    top: 70px;
+    font-size: 1rem;
+  }
+
+  .front-page-heading {
+    width: 700px;
+  }
+
+  .heading-description {
+    font-size: 2.3rem;
+  }
+  .second-content-div .nft-img,
+  .fourth-content-div .nft-img {
+    order: 2;
+  }
+
+  .content-div {
+    padding: 0em 3em 0em 3em;
+  }
+
+  .wrapper .meet-the-gardener-div {
+    width: 90%;
+  }
+
+  .collection-div,
+  .basic-design-div,.monstera-div {
+    margin: 4em auto;
+    width: 90%;
+  }
+
+  .secret-garden-div {
+    margin: 1em auto;
+  }
+
+  .species-div {
+    width: 90%;
+  }
+
+  .species-div-img {
+    width: 320px;
+  }
+
+  .harvesting-div,
+  .goal-div,
+  .holder-div,
+  .active-member-community-div,
+  .stage-div,
+  .active-div,
+  .community-div {
+    width: 90%;
+    line-height: 1.5;
+    margin: 40px auto 0;
+  }
+
+  .first-gardener-div,
+  .enter-secret-garden-div,
+  .trigger-div,
+  .concept-div,
+  .begin-div,
+  .ambition-div {
+    width: 90%;
+  }
+
+  .active-div,
+  .community-div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .community-div {
+    margin-top: 40px;
+  }
+
+  .showcase-area {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .wrapper5 {
+    padding-bottom: 3em;
+  }
+
+  .wrapper2,
+  .wrapper3 {
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    width: 95%;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0 auto 3em;
+    padding: 2em 1em;
+  }
+
+  .front-page-heading {
+    width: 600px;
+  }
+
+  .heading-description {
+    font-size: 2rem;
+  }
+
+  .plants-div-img {
+    display: none;
+  }
+
+  .second-plant-img {
+    display: block;
+    width: 270px;
+  }
+
+  .overlay {
+    width: 270px;
+  }
+
+  .plants-div-text {
+    top: 128px;
+  }
+
+  body {
+    background-position: unset;
+  }
+
+  .second-section {
+    margin-top: -2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .nft-calender {
+    width: 100px;
+  }
+
+  .harvest-icon {
+    display: none;
+  }
+
+  .as-seen-text {
+    font-size: 1.8rem;
+  }
+  .front-page-heading {
+    width: 500px;
+  }
+
+  .heading-description {
+    font-size: 1.5rem;
+  }
+
+  .content-div {
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper5 .gardener-description,
+  .wrapper2 .gardener-description,
+  .wrapper3 .gardener-description,
+  .wrapper .gardener-description {
+    font-size: 1rem;
+  }
+
+  .wrapper5 .gardener-heading,
+  .wrapper2 .gardener-heading,
+  .wrapper3 .gardener-heading,
+  .wrapper .gardener-heading {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .species-div-img {
+    width: 280px;
+  }
+
+  .front-page-heading {
+    width: 400px;
+  }
+
+  .nft-img {
+    width: 249px;
+  }
+
+  .wrapper2 .gardener-btn,
+  .wrapper3 .gardener-btn {
+    font-size: 0.8rem;
+  }
+
+  .harvesting-div,
+  .goal-div,
+  .holder-div,
+  .active-member-community-div,
+  .stage-div,
+  .active-div,
+  .community-div {
+    text-align: left;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  .nft-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .roadmap-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .front-page-heading {
+    width: 370px;
+  }
+}
