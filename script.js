@@ -98,4 +98,3 @@ harvest.forEach(harvest => {
         sideNavBar.style.display = 'flex';
     })
 })
-

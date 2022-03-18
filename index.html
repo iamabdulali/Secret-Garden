@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="showcase-area">
+    <div id="showcase" class="showcase-area">
         <!-- Header -->
-        <div class="header">
+        <div id="header" class="header">
             <div class="icon-div collection">
                 <img class="icon-width" src="./Assets/spider-plant-logo.png" alt="spider-plant-logo">
                 <p class="icon-description">Collections</p>
@@ -80,7 +80,7 @@
                     <a href="https://opensea.io/collection/secretgarden-monstera-and-co"> <button
                             class="gardener-btn">SECRETGARDEN’S SPECIES</button></a>
                 </div>
-                <img class="species-div-img" src="./Assets/species-img.png" alt="NFT-N2">
+                <img class="species-div-img" src="./Assets/Gif-secretGardenNFT-min.gif" alt="NFT-N2">
             </div>
 
             <div class="meet-the-gardener-div collection-div">
@@ -112,20 +112,23 @@
 
             <div class="meet-the-gardener-div monstera-div">
                 <p class="gardener-heading">Details of the collection 01: "Monstera & CO"</p>
-                <p class="gardener-description">Details of the collection 01: "Monstera & CO" The background will remain
+                <p class="gardener-description">The background will remain
                     the same for all the Monstera collection NFT. There is 100 unique NFTs in this collection and it
                     will include 4 types of rarity distributed
                     as it follows:</p>
 
                 <p class="gardener-description">- 85 common NFTs Monstera Deliciosa (<span class="grey">Grey pot</span>
                     & no white)</p>
-                <p class="gardener-description">- Price: 0,02</p>
+                <p class="gardener-description price-eth">- Price: 0,02 <img class="eth-icon" src="./Assets/ETH.png"
+                        alt="ETH"></p>
                 <p class="gardener-description"> - 10 rare NFTs Monstera Deliciosa Thai constellation (<span
                         class="blue">Blue pot</span> & spotted white leaves) </p>
-                <p class="gardener-description">- Price: 0.05</p>
+                <p class="gardener-description price-eth">- Price: 0.05 <img class="eth-icon" src="./Assets/ETH.png"
+                        alt="ETH"></p>
                 <p class="gardener-description">- 4 epic NFTs Monstera Deliciosa Albo (<span class="purple">Purple
                         pot</span> & White leaves) </p>
-                <p class="gardener-description">- Price: 0,085</p>
+                <p class="gardener-description price-eth">- Price: 0,085 <img class="eth-icon" src="./Assets/ETH.png"
+                        alt="ETH"></p>
                 <p class="gardener-description"> - 1 legendary NFT Monstera Deliciosa Albo Full white (<span
                         class="orange">Orange pot</span> & Full White leaves) </p>
                 <p class="gardener-description">- Price: auction</p>
@@ -292,11 +295,15 @@
                     <p class="gardener-description">Every holder holding an NFT for two weeks will receive several
                         tickets according to the rarity of the NFT. </p>
 
-                    <p class="gardener-description bold-weight"> Common NFT (grey pot) = 1 ticket </p>
-                    <p class="gardener-description bold-weight"> Rare NFT (blue pot) = 2.5 tickets
+                    <p class="gardener-description bold-weight"> Common NFT <span class="grey">(grey pot)</span> = 1
+                        ticket </p>
+                    <p class="gardener-description bold-weight"> Rare NFT <span class="blue">(blue pot)</span> = 2.5
+                        tickets
                     </p>
-                    <p class="gardener-description bold-weight"> Epic NFT (purple pot) = 4 tickets </p>
-                    <p class="gardener-description bold-weight"> Legendary NFT (orange pot) = 5 tickets </p>
+                    <p class="gardener-description bold-weight"> Epic NFT <span class="purple">(purple pot)</span> = 4
+                        tickets </p>
+                    <p class="gardener-description bold-weight"> Legendary NFT <span class="orange">(orange pot)</span>
+                        = 5 tickets </p>
                     <p class="gardener-description"> Every last Sunday of the month, the total earnings of the month’s
                         sales will be divided by the number of tickets held. It will then be distributed as Wrapped ETH
                         on the polygon network. The more NFTs you have, the more money you receive; the rarer your NFT,
@@ -412,8 +419,6 @@
                         src="./Assets/BLKWHT.png" alt="BLKWHT"></a>
                 <a href="https://upcomingnft.art/secret-garden-nft/"><img class="nft-calender"
                         src="./Assets/upcoming.png" alt="upcoming"></a>
-                <a href="https://nftcalendar.io/event/secretgarden-nft-opening/"><img class="nft-calender"
-                        src="./Assets/BLKWHT.png" alt="BLKWHT"></a>
             </div>
         </footer>
     </div>
@@ -421,7 +426,7 @@
 
     <!-- SideNav Bar -->
     <div class="side-nav-bar">
-        <a href="#" class="home"><img class="icon-width hamburger" src="./Assets/Home.png" alt="Hamburger"></a>
+        <a href="#showcase" class="home"><img class="icon-width hamburger" src="./Assets/Home.png" alt="Hamburger"></a>
         <a href="#"><img class="icon-width collection" src="./Assets/spider-plant-logo.png" alt="spider-plant-logo"></a>
         <a href="#"><img class="icon-width gardener" src="./Assets/gardener-logo.png" alt="gardener-logo"></a>
         <a href="#"><img class="icon-width roadmap" src="./Assets/map-logo.png" alt="map-logo"></a>
@@ -437,7 +442,7 @@
 
     <!-- SideNav Bar Smaller Devices -->
     <div class="side-nav-bar side-nav-bar-mobile">
-        <a href="#" id="close">X</a>
+        <a href="#header" id="close">X</a>
         <a href="#" class="home"><img class="icon-width hamburger" src="./Assets/Home.png" alt="Hamburger">Home</a>
         <a href="#" class="collection"><img class="icon-width" src="./Assets/spider-plant-logo.png"
                 alt="spider-plant-logo">collections</a>
