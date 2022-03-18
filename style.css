@@ -54,7 +54,11 @@ body {
   background-blend-mode: overlay;
 }
 
-.showcase-area,.wrapper3,.wrapper2,.wrapper4,.wrapper5 {
+.showcase-area,
+.wrapper3,
+.wrapper2,
+.wrapper4,
+.wrapper5 {
   background: url(./Assets/Background-cache-menu.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -68,13 +72,16 @@ body {
   padding-top: 1em;
 }
 
-.height{
+.height {
   width: 100%;
   opacity: 0;
   visibility: hidden;
 }
 
-.wrapper3,.wrapper2,.wrapper4,.wrapper5{
+.wrapper3,
+.wrapper2,
+.wrapper4,
+.wrapper5 {
   background: none;
 }
 
@@ -263,7 +270,7 @@ body {
   margin: 1em 0;
 }
 
-.monstera-div{
+.monstera-div {
   width: 70%;
   line-height: 1.3;
   margin: 0 auto;
@@ -346,45 +353,6 @@ footer {
   text-decoration: underline;
   font-size: 2rem;
 }
-
-/* 
-.name-email-div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-fields,
-.leave-a-message {
-  background-color: rgba(198, 228, 202, 0.9);
-  border: none;
-  padding: 0.6em 1em;
-  width: 40%;
-  font-size: 1.3rem;
-  border: 1px solid #000;
-  margin-bottom: 2em;
-  font-family: "Poppins";
-  color: #000;
-}
-
-.leave-a-message {
-  width: 100%;
-  height: 290px;
-  resize: none;
-  padding: 1.2em 1em;
-}
-
-.input-fields::placeholder,
-.leave-a-message::placeholder {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 1.3rem;
-  color: #000;
-  text-decoration: underline;
-}
-
-.leave-a-message::placeholder {
-  text-decoration: none;
-} */
 
 /* Collection Div */
 
@@ -492,7 +460,7 @@ footer {
 
 .roadmap-img {
   width: 85%;
-  margin: 2em auto 0; 
+  margin: 2em auto 0;
   object-fit: cover;
 }
 
@@ -553,121 +521,135 @@ footer {
   padding: 1em 1.5em;
 }
 
-
-@media (min-width:1920px) and (min-height: 1080px){
-  .icon-width2{
+@media (min-width: 1920px) {
+  .icon-width2 {
     width: 60px;
     margin: 0;
   }
 
-  .icon-width{
+  .icon-width {
     width: 65px;
   }
 
-  .icon-description{
+  .icon-description {
     font-size: 1.5rem;
   }
 
   .front-page-heading {
     width: 1350px;
+  }
+
+  .heading-description {
+    font-size: 3.6rem;
+  }
+
+  .plants-div-img {
+    width: 320px;
+  }
+
+  .overlay {
+    width: 960px;
+  }
+
+  .plants-div-text {
+    top: 126px;
+    font-size: 1.6rem;
+    width: 440px;
+  }
+
+  .heading-div {
+    margin-top: 5em;
+  }
+
+  .heading-description {
+    margin: 1em 0;
+  }
+
+  .showcase-area {
+    height: 100vh;
+  }
+  .side-nav-bar {
+    height: auto;
+  }
+
+  .side-nav-bar a {
+    margin-bottom: 2.6em;
+  }
+
+  .second-content-div,
+  .third-content-div,
+  .fourth-content-div,
+  .content-div {
+    padding: 0em 14em 1em 14em;
+  }
+
+  .wrapper .meet-the-gardener-div {
+    width: 57%;
+  }
+
+  .nft-img {
+    width: 550px;
+  }
+
+  .gardener-heading {
+    font-size: 3.2rem;
+  }
+
+  .gardener-description {
+    font-size: 1.8rem;
+  }
+
+  .gardener-btn {
+    font-size: 1.5rem;
+  }
+
+  .nft-calender {
+    width: 280px;
+  }
+
+  .grey,
+  .blue,
+  .orange,
+  .purple {
+    font-size: 1.8rem;
+  }
+
+  .collection-div {
+    margin: 7em auto 0 auto;
+  }
+
+  .begin-and-ambition-div {
+    padding: 2em 10em 2em 4em;
+  }
+
+  .concept-div {
+    margin-left: 14em;
+    width: 63%;
+  }
+  .enter-secret-garden-div {
+    width: 60%;
+    margin-left: 40em;
+  }
+
+  .holder-div {
+    right: 60px;
+  }
+
+  .showcase-area {
+    background: url(./Assets/Background-cache-menu.png) !important;
+    max-width: 100% !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .second-section {
+    max-width: 100% !important;
+    margin: 4em auto 0;
+  }
 }
 
-.heading-description{
-  font-size: 3.6rem;
-}
-
-.plants-div-img {
-  width: 320px;
-}
-
-.overlay{
-  width: 960px;
-}
-
-.plants-div-text{
-  top: 126px;
-  font-size: 1.6rem;
-  width: 440px;
-}
-
-.heading-div{
-  margin-top: 5em;
-}
-
-.heading-description{
-  margin: 1em 0;
-}
-
-.showcase-area{
-  height: 100vh;
-}
-.side-nav-bar{
-  height: auto;
-}
-
-.side-nav-bar a{
-  margin-bottom: 2.6em;
-}
-
-.second-content-div, .third-content-div, .fourth-content-div, .content-div{
-  padding: 0em 14em 1em 14em;
-}
-
-.wrapper .meet-the-gardener-div{
-  width: 57%;
-}
-
-.nft-img{
-  width: 550px;
-}
-
-.gardener-heading{
-  font-size: 3.2rem;
-}
-
-.gardener-description{
-  font-size: 1.8rem;
-}
-
-.gardener-btn{
-  font-size: 1.5rem;
-}
-
-.nft-calender {
-  width: 280px;
-}
-
-.grey ,.blue,.orange,.purple{
-  font-size: 1.8rem;
-}
-
-.collection-div{
-  margin: 7em auto 0 auto;
-}
-
-.begin-and-ambition-div{
-  padding: 2em 10em 2em 4em;
-}
-
-.concept-div{
-  margin-left: 14em;
-  width: 63%;
-}
-.enter-secret-garden-div{
-  width: 60%;
-  margin-left: 40em;
-}
-
-
-.holder-div{
-  right: 60px;
-}
-
-}
-
-
-
-@media (min-width: 1600px) and (min-height: 900px) {
+@media (min-width: 1500px) {
   .showcase-area {
     background: none;
     max-width: 1366px;
@@ -679,23 +661,10 @@ footer {
     margin: 4em auto 0;
   }
 
-  .name-email-div {
-    max-width: 1366px;
-    margin: 0 auto;
-  }
-
   footer {
     text-align: center;
   }
-
-  .leave-a-message {
-    max-width: 1366px;
-    margin: 0 auto 2em;
-  }
 }
-
-
-
 
 @media (max-width: 1320px) {
   .icon-description {
@@ -792,13 +761,11 @@ footer {
   }
 }
 
-
 @media (max-width: 1000px) {
   .hamburger-menu {
     display: block;
   }
 
-  
   .side-nav-bar-mobile a {
     display: flex;
     align-items: center;
@@ -834,9 +801,9 @@ footer {
     transition: 0.6s ease-in-out all;
   }
 
-  #close{
+  #close {
     position: absolute;
-    font-family: 'Inkfree';
+    font-family: "Inkfree";
     font-size: 2.5rem;
     font-weight: 600;
     right: 30px;
@@ -976,7 +943,8 @@ footer {
   }
 
   .collection-div,
-  .basic-design-div,.monstera-div {
+  .basic-design-div,
+  .monstera-div {
     margin: 4em auto;
     width: 90%;
   }
