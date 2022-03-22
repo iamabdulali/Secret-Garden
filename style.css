@@ -23,18 +23,6 @@ button {
   cursor: pointer;
 }
 
-.wrapper,
-.wrapper2,
-.wrapper3,
-.wrapper4,
-.wrapper5 {
-  display: none;
-}
-
-.wrapper {
-  display: block;
-}
-
 @font-face {
   font-family: "Inkfree";
   src: url(./Font/ink-free.otf);
